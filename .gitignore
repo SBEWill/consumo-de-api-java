@@ -1,3 +1,12 @@
+
+﻿.idea/
+*.iml
+/target/
+/build/
+/.gradle/
+.DS_Store
+*.log
+
 # IntelliJ IDEA
 .idea/
 *.iml
