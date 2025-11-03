@@ -8,6 +8,7 @@ public class JsonConverter {
 
 
     public Address toObject(String jsonString, Class<Address> cepClass) {
+
         Gson gson = new GsonBuilder()
                 .setPrettyPrinting()
                 .create();
