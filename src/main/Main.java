@@ -16,7 +16,7 @@ public class Main {
         JsonWriter jsonWriter = new JsonWriter();
 
         Scanner scanner = new Scanner(System.in);
-        String cep = "";
+        String cep ;
         boolean sucesso = false;
         while (!sucesso) {
             System.out.println("Digite o CEP para consulta (somente 8 dígitos):");

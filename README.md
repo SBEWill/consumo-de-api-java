@@ -52,15 +52,15 @@ JsonConverter
 
 Utilidade de Mapeamento
 
-Deserializa a string JSON bruta para o objeto Address (e vice-versa).
+Deserializa a string JSON bruta para o objeto utils.models.Address (e vice-versa).
 
 JsonWriter
 
 Persistência
 
-Responsável por serializar o objeto Address e escrevê-lo com segurança no arquivo, barrando objetos null.
+Responsável por serializar o objeto utils.models.Address e escrevê-lo com segurança no arquivo, barrando objetos null.
 
-Address
+utils.models.Address
 
 Modelo de Dados
 
@@ -76,7 +76,7 @@ Consulta: Main chama CepQuery.queryCep(cep).
 
 Resposta: CepQuery retorna a String JSON (caminho de sucesso).
 
-Conversão: Main chama JsonConverter.fromJson(json, Address.class), obtendo o objeto address.
+Conversão: Main chama JsonConverter.fromJson(json, utils.models.Address.class), obtendo o objeto address.
 
 Persistência Segura: Main chama JsonWriter.writeToFile(address). Se o address for nulo ou inválido (ex: cep=null), o JsonWriter lança uma exceção para o Main e impede o salvamento.
 
